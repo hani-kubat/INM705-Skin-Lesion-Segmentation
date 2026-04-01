@@ -1,0 +1,8 @@
+torch>=2.0.0
+segmentation-models-pytorch
+albumentations
+wandb
+numpy
+Pillow
+scikit-learn
+matplotlib
