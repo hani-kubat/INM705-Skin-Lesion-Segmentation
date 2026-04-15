@@ -37,3 +37,14 @@ pip install -r requirements.txt
 
 ## Experiment Tracking
 All runs logged via Weights and Biases. Project: INM705-Skin-Lesion-Segmentation
+
+## Model Checkpoints
+
+Trained model weights for all four experimental conditions are saved and available upon request. Checkpoint files are named:
+
+- `best_model_condition_A.pth` — U-Net, frozen pretrained encoder (Val Dice: 0.8808)
+- `best_model_condition_B.pth` — U-Net, fine-tuned pretrained encoder (Val Dice: 0.9124)
+- `best_model_condition_C.pth` — U-Net, random initialisation (Val Dice: 0.8913)
+- `best_model_condition_D.pth` — UNet++ with scSE attention (Val Dice: 0.9003)
+
+Checkpoints were saved during training using `torch.save()` and can be loaded using the `load_model()` function in `inference.ipynb`.
