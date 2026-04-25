@@ -47,4 +47,4 @@ Trained model weights for all four experimental conditions are saved and availab
 - `best_model_condition_C.pth` — U-Net, random initialisation (Val Dice: 0.8913)
 - `best_model_condition_D.pth` — UNet++ with scSE attention (Val Dice: 0.9003)
 
-Checkpoints were saved during training using `torch.save()` and can be loaded using the `build_model()` function in `inference.ipynb`.
+Checkpoints were saved during training using `torch.save()` and can be loaded using the `build_model()` function in `INM705_Inference.ipynb`.
