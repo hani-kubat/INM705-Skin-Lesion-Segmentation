@@ -22,7 +22,7 @@ https://challenge.isic-archive.com/data/#2018
 - `Dataset.py` - ISIC dataset class and augmentation transforms
 - `Models.py` - U-Net and UNet++ models, loss function and metrics
 - `train.py` - Training pipeline with wandb logging
-- `inference.py` - Load checkpoints and visualise predictions
+- `INM705_Inference.ipynb` - Load checkpoints and visualise predictions
 - `requirements.txt` - Dependencies
 
 ## Training
@@ -47,4 +47,4 @@ Trained model weights for all four experimental conditions are saved and availab
 - `best_model_condition_C.pth` — U-Net, random initialisation (Val Dice: 0.8913)
 - `best_model_condition_D.pth` — UNet++ with scSE attention (Val Dice: 0.9003)
 
-Checkpoints were saved during training using `torch.save()` and can be loaded using the `load_model()` function in `inference.ipynb`.
+Checkpoints were saved during training using `torch.save()` and can be loaded using the `build_model()` function in `inference.ipynb`.
